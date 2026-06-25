@@ -51,10 +51,8 @@ function App() {
   const handleDelete = () => {
     if (window.confirm("정말 삭제할까요")) {
       setContent((prev) => prev.filter((item) => item.id !== id));
-      setMode("welcome");
-    } else {
-      setMode("welcome");
     }
+      setMode("welcome");
   };
   if (mode === "welcome") {
     _title = welcome.title;
